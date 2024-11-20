@@ -1,0 +1,165 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-on-hover:hover {
+            box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.7);
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <div class="relative">
+   <div class="absolute top-0 left-0 w-full bg-gradient-to-r from-black to-green-900 h-12 flex items-center px-4">
+    <span class="text-sm">
+     Recognised as a next tech
+    </span>
+   </div>
+   <div class="absolute top-0 right-0 w-full h-12 flex items-center justify-end px-4 space-x-4">
+    <span class="text-sm">
+     0345 056 1133
+    </span>
+    <button class="bg-white text-black px-4 py-2 rounded glow-on-hover">
+     CONTACT US
+    </button>
+    <button class="bg-gray-700 text-white px-4 py-2 rounded glow-on-hover">
+     DEMO
+    </button>
+   </div>
+  </div>
+  <div class="container mx-auto pt-20 px-4">
+   <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2">
+     <div class="flex items-center space-x-2 mb-4">
+      <i class="fas fa-glasses text-2xl text-green-500">
+      </i>
+      <h1 class="text-green-500 text-xl">
+       HykI AI: NEXT GEN CONVERSATIONAL AI
+      </h1>
+     </div>
+     <h2 class="text-4xl font-bold mb-4">
+      Experience the power of Contact Centre AI
+     </h2>
+     <p class="mb-4">
+      Redefine your customer communication: Automate omnichannel workflows at scale which never stop learning &amp; optimising your performance
+     </p>
+     <div class="flex items-center space-x-2 mb-4">
+      <i class="fas fa-check-circle text-green-500">
+      </i>
+      <span>
+       AI &amp; Automation
+      </span>
+      <i class="fas fa-check-circle text-green-500">
+      </i>
+      <span>
+       AI Voice Agents
+      </span>
+      <i class="fas fa-check-circle text-green-500">
+      </i>
+      <span>
+       AI Chatbots
+      </span>
+      <i class="fas fa-check-circle text-green-500">
+      </i>
+      <span>
+       Custom Automation
+      </span>
+     </div>
+     <div class="bg-gray-900 p-4 rounded-lg mb-4">
+      <h3 class="text-lg font-bold mb-2">
+       1. How can we help ?*
+      </h3>
+      <div class="space-y-2">
+       <button class="bg-gray-700 text-white px-4 py-2 rounded w-full text-left glow-on-hover" onclick="toggleForm('callMeForm')">
+        A. Call me
+       </button>
+       <div class="hidden" id="callMeForm">
+        <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Your Phone Number" type="text"/>
+        <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Your Email" type="email"/>
+        <button class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2 glow-on-hover">
+         Submit
+        </button>
+       </div>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded w-full text-left glow-on-hover" onclick="toggleForm('infoPricingForm')">
+        B. Get more info &amp; pricing
+       </button>
+       <div class="hidden" id="infoPricingForm">
+        <div class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2">
+         <h4 class="text-lg font-bold mb-2">
+          Case Studies
+         </h4>
+         <p class="mb-2">
+          Case Study 1: How our AI improved customer service for Company A.
+         </p>
+         <p class="mb-2">
+          Case Study 2: The impact of our AI on sales for Company B.
+         </p>
+         <p class="mb-2">
+          Case Study 3: Enhancing customer engagement with AI for Company C.
+         </p>
+        </div>
+       </div>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded w-full text-left glow-on-hover" onclick="toggleForm('bookDemoForm')">
+        C. book a demo
+       </button>
+       <div class="hidden" id="bookDemoForm">
+        <div class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2">
+         <h4 class="text-lg font-bold mb-2">
+          Book a Meeting
+         </h4>
+         <p class="mb-2">
+          Please select a date and time for your demo.
+         </p>
+         <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Select Date" type="date"/>
+         <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Select Time" type="time"/>
+         <button class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2 glow-on-hover">
+          Book Now
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+     <div class="relative">
+      <img alt="Screenshot of AI software interface" class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/pwijyt967f2lbSBVbqJVEE3s9CN6Toa01EPih2WajqvvnT5JA.jpg" width="500"/>
+      <div class="absolute inset-0 flex items-center justify-center">
+       <button class="bg-gray-700 text-white p-4 rounded-full glow-on-hover">
+        <i class="fas fa-play text-2xl">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="flex justify-center space-x-4 mt-8">
+    <img alt="Dunlop logo" height="50" src="https://storage.googleapis.com/a1aa/image/dCYNjFfBJjW5EqrvmSiz1dYWzQRrKL6NIJPFiTdRdU5wnT5JA.jpg" width="100"/>
+    <img alt="Betway logo" height="50" src="https://storage.googleapis.com/a1aa/image/xIln2labUqr5DZoeMlCk5mSxwtYaXf7kadsxEdA8PvpdPnyTA.jpg" width="100"/>
+    <img alt="Virgin Active logo" height="50" src="https://storage.googleapis.com/a1aa/image/fVEBkcg7PzwxSaqLJ7iRZegwpVYb9rJy5Si3ZFznyATjPnyTA.jpg" width="100"/>
+    <img alt="Clas Ohlson logo" height="50" src="https://storage.googleapis.com/a1aa/image/iNl9W1Wc5JbnB1gVAnZNBxg0yFqeQWvZXSKQqUZujoTunT5JA.jpg" width="100"/>
+    <img alt="Boots Hearingcare logo" height="50" src="https://storage.googleapis.com/a1aa/image/k1Tjvf29BwwmFCDFgbVkjgo5qXHKpM2HKOS8eAqtvlmkPnyTA.jpg" width="100"/>
+    <img alt="Betfred logo" height="50" src="https://storage.googleapis.com/a1aa/image/MhQaOrQD5nqtF1XkknPCBy71b3BIPfU0kl91SwF4sYgsnT5JA.jpg" width="100"/>
+   </div>
+   <div class="text-center mt-4">
+    <p>
+     Powering over 15M global c
+    </p>
+   </div>
+  </div>
+  <script>
+   function toggleForm(formId) {
+            var form = document.getElementById(formId);
+            if (form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+            } else {
+                form.classList.add('hidden');
+            }
+        }
+  </script>
+ </body>
+</html>
