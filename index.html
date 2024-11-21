@@ -45,6 +45,9 @@
     
     <!-- Custom Styles -->
     <style>
+        body {
+            padding: 2rem;
+        }
         .glow-on-hover:hover {
             box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.7);
             transition: box-shadow 0.3s ease;
@@ -56,6 +59,81 @@
             transform: translateY(-10px);
             box-shadow: 0 10px 15px rgba(16, 185, 129, 0.2);
         }
+
+        .logo-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-slide {
+            display: flex;
+            animation: loop 10s linear infinite;
+        }
+        .logo-slide img {
+            width: 100px;
+            height: 50px;
+            object-fit: contain;
+            margin: 0 20px;
+        }
+        @keyframes loop {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-10%); }
+        }
+        .logo-container:hover .logo-slide {
+            animation-play-state: paused;
+        }
+
+        #services{
+            /* margin-bottom: 0; */
+        }
+
+        @keyframes fadeInDown {
+            from {
+             opacity: 0;
+             transform: translateY(-20px);
+            }
+            to {
+               opacity: 1;
+               transform: translateY(0);
+             }
+         }
+
+    @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+         }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+       from {
+          opacity: 0;
+          transform: translateX(50px);
+         }
+        to {
+           opacity: 1;
+           transform: translateX(0);
+        }
+    }
+
+    .animate-fade-in-down {
+       animation: fadeInDown 1s ease-out;
+    }
+
+    .animate-slide-in-left {
+       animation: slideInLeft 1s ease-out;
+    }
+
+    .animate-slide-in-right {
+      animation: slideInRight 1s ease-out;
+    }
     </style>
 </head>
 <body class="bg-black text-white font-sans">
@@ -162,12 +240,22 @@
         </div>
         
         <div class="flex justify-center space-x-4 mt-8">
-            <img alt="Dunlop logo" height="50" src="https://storage.googleapis.com/a1aa/image/dCYNjFfBJjW5EqrvmSiz1dYWzQRrKL6NIJPFiTdRdU5wnT5JA.jpg" width="100" />
-            <img alt="Betway logo" height="50" src="https://storage.googleapis.com/a1aa/image/xIln2labUqr5DZoeMlCk5mSxwtYaXf7kadsxEdA8PvpdPnyTA.jpg" width="100" />
-            <img alt="Virgin Active logo" height="50" src="https://storage.googleapis.com/a1aa/image/fVEBkcg7PzwxSaqLJ7iRZegwpVYb9rJy5Si3ZFznyATjPnyTA.jpg" width="100" />
-            <img alt="Clas Ohlson logo" height="50" src="https://storage.googleapis.com/a1aa/image/iNl9W1Wc5JbnB1gVAnZNBxg0yFqeQWvZXSKQqUZujoTunT5JA.jpg" width="100" />
-            <img alt="Boots Hearingcare logo" height="50" src="https://storage.googleapis.com/a1aa/image/k1Tjvf29BwwmFCDFgbVkjgo5qXHKpM2HKOS8eAqtvlmkPnyTA.jpg" width="100" />
-            <img alt="Betfred logo" height="50" src="https://storage.googleapis.com/a1aa/image/MhQaOrQD5nqtF1XkknPCBy71b3BIPfU0kl91SwF4sYgsnT5JA.jpg" width="100" />
+            
+        <div class="logo-container">
+        <div class="logo-slide">
+            <img src="https://storage.googleapis.com/a1aa/image/dCYNjFfBJjW5EqrvmSiz1dYWzQRrKL6NIJPFiTdRdU5wnT5JA.jpg" alt="Dunlop logo">
+            <img src="https://storage.googleapis.com/a1aa/image/xIln2labUqr5DZoeMlCk5mSxwtYaXf7kadsxEdA8PvpdPnyTA.jpg" alt="Betway logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fVEBkcg7PzwxSaqLJ7iRZegwpVYb9rJy5Si3ZFznyATjPnyTA.jpg" alt="Virgin Active logo">
+            <img src="https://storage.googleapis.com/a1aa/image/iNl9W1Wc5JbnB1gVAnZNBxg0yFqeQWvZXSKQqUZujoTunT5JA.jpg" alt="Clas Ohlson logo">
+            <img src="https://storage.googleapis.com/a1aa/image/k1Tjvf29BwwmFCDFgbVkjgo5qXHKpM2HKOS8eAqtvlmkPnyTA.jpg" alt="Boots Hearingcare logo">
+            <img src="https://storage.googleapis.com/a1aa/image/MhQaOrQD5nqtF1XkknPCBy71b3BIPfU0kl91SwF4sYgsnT5JA.jpg" alt="Betfred logo">
+            
+            <!-- Duplicate logos for seamless looping -->
+            <img src="https://storage.googleapis.com/a1aa/image/dCYNjFfBJjW5EqrvmSiz1dYWzQRrKL6NIJPFiTdRdU5wnT5JA.jpg" alt="Dunlop logo">
+            <img src="https://storage.googleapis.com/a1aa/image/xIln2labUqr5DZoeMlCk5mSxwtYaXf7kadsxEdA8PvpdPnyTA.jpg" alt="Betway logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fVEBkcg7PzwxSaqLJ7iRZegwpVYb9rJy5Si3ZFznyATjPnyTA.jpg" alt="Virgin Active logo">
+        </div>
+        </div>
         </div>
         <div class="text-center mt-4">
             <p>Powering over 15M global c</p>
@@ -192,7 +280,7 @@
             
             <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
                 <div class="text-primary mb-4">
-                    <i class="fas fa-ban text-2xl"></i>
+                    <i class="fa-solid fa-comment"></i>
                 </div>
                 <h3 class="text-lg font-semibold text-white mb-2">AI Chatbots</h3>
                 <p class="text-gray-400">Enhance customer service and engagement by automating real-time conversations, providing instant responses.</p>
@@ -207,6 +295,59 @@
             </div>
         </div>
     </div>
+
+   
+   <div class="container mx-auto px-4 py-12 bg-secondary-900 overflow-hidden">
+    <div class="text-center mb-12 animate-fade-in-down">
+        <h1 class="text-4xl font-bold text-primary mb-4">About HykI AI</h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Pioneering intelligent communication solutions that transform business interactions
+        </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6 text-gray-300 animate-slide-in-left">
+            <div class="flex items-start space-x-4 group cursor-pointer hover:bg-gray-800 p-4 rounded-lg transition-all duration-300">
+                <i class="fas fa-rocket text-primary text-2xl mt-1 transform group-hover:rotate-12 transition-transform duration-300"></i>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Our Vision</h3>
+                    <p>To revolutionize business communication through cutting-edge AI technologies that learn, adapt, and optimize in real-time.</p>
+                </div>
+            </div>
+            
+            <div class="flex items-start space-x-4 group cursor-pointer hover:bg-gray-800 p-4 rounded-lg transition-all duration-300">
+                <i class="fas fa-users text-primary text-2xl mt-1 transform group-hover:rotate-6 transition-transform duration-300"></i>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Our Team</h3>
+                    <p>A diverse collective of AI researchers, data scientists, and communication experts dedicated to pushing the boundaries of conversational intelligence.</p>
+                </div>
+            </div>
+            
+            <div class="flex items-start space-x-4 group cursor-pointer hover:bg-gray-800 p-4 rounded-lg transition-all duration-300">
+                <i class="fas fa-globe text-primary text-2xl mt-1 transform group-hover:rotate-45 transition-transform duration-300"></i>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Global Impact</h3>
+                    <p>Serving businesses worldwide, with AI solutions that transcend language barriers and transform customer engagement strategies.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-center animate-slide-in-right">
+            <div class="relative w-full max-w-md group">
+                <img 
+                    src="https://storage.googleapis.com/a1aa/image/pwijyt967f2lbSBVbqJVEE3s9CN6Toa01EPih2WajqvvnT5JA.jpg" 
+                    alt="HykI AI Team" 
+                    class="rounded-lg shadow-lg object-cover w-full h-96 transform transition-transform duration-300 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg"></div>
+                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h4 class="text-xl font-bold">Innovation Meets Intelligence</h4>
+                    <p class="text-sm">Transforming communication, one AI solution at a time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
