@@ -1,73 +1,140 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HykI AI - Services</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#10B981', // Emerald green
+                            50: '#ECFDF5',
+                            100: '#D1FAE5',
+                            900: '#064E3B'
+                        },
+                        secondary: {
+                            DEFAULT: '#111827', // Dark blue-gray
+                            900: '#020617'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #020617; /* Very dark blue-gray */
+            color: #f4f4f5; /* Almost white */
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(16, 185, 129, 0.2);
+        }
+    </style>
 </head>
-<body class="bg-black text-white">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<body class="bg-secondary-900 text-white font-sans">
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-primary mb-4">Our Services</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Cutting-edge AI solutions designed to transform your business communication and operational efficiency.
+            </p>
+        </div>
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-tachometer-alt"></i>
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-tachometer-alt text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Turbo latency optimizations</h3>
-                <p class="mt-2 text-gray-400">Optimized GPU inference, intelligent caching, low-latency audio streaming.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Turbo Latency Optimizations</h3>
+                <p class="text-gray-400">Optimized GPU inference, intelligent caching, low-latency audio streaming.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-ban"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-ban text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Interruptions</h3>
-                <p class="mt-2 text-gray-400">A person knows when to stop speaking, your voicebot should too.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Intelligent Interruptions</h3>
+                <p class="text-gray-400">A person knows when to stop speaking, your voicebot should too.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-project-diagram"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-project-diagram text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Proprietary endpointing model</h3>
-                <p class="mt-2 text-gray-400">With great speed comes great responsibility, your users shouldn’t be interrupted when they pause.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Proprietary Endpointing Model</h3>
+                <p class="text-gray-400">With great speed comes great responsibility, your users shouldn't be interrupted when they pause.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-phone"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-phone text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Scale to 1M+ concurrent calls</h3>
-                <p class="mt-2 text-gray-400">Carefully designed Kubernetes cluster, with scalability, and high availability built-in.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Massive Scale Calling</h3>
+                <p class="text-gray-400">Scale to 1M+ concurrent calls with carefully designed Kubernetes clusters.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-calendar-check"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-calendar-check text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Function calling</h3>
-                <p class="mt-2 text-gray-400">Give your voicebot superpowers–booking appointments, data lookup, form-filling, and so much more.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Advanced Function Calling</h3>
+                <p class="text-gray-400">Empower your voicebot with superpowers–booking appointments, data lookup, form-filling, and more.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-video"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-video text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">WebRTC streaming</h3>
-                <p class="mt-2 text-gray-400">Same protocol used by Google Meets and Microsoft Teams for the lowest latency and highest fault tolerance.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">WebRTC Streaming</h3>
+                <p class="text-gray-400">Lowest latency and highest fault tolerance, using the same protocol as Google Meets and Microsoft Teams.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-network-wired"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-network-wired text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Onprem provider deployments</h3>
-                <p class="mt-2 text-gray-400">Avoid the latency spikes and unreliability of shared infrastructure.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">On-Prem Provider Deployments</h3>
+                <p class="text-gray-400">Eliminate latency spikes and infrastructure unreliability with dedicated deployments.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-language"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-language text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Multilingual support</h3>
-                <p class="mt-2 text-gray-400">Create voice agents in your users’ tongues–English, Spanish, German, Hindi, Portuguese, and 100+ others.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Multilingual Support</h3>
+                <p class="text-gray-400">Create voice agents in 100+ languages, including English, Spanish, German, Hindi, and Portuguese.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <div class="text-teal-400 mb-4">
-                    <i class="fas fa-globe"></i>
+            
+            <div class="bg-gray-900 p-6 rounded-lg service-card border border-primary/20 hover:border-primary/50">
+                <div class="text-primary mb-4">
+                    <i class="fas fa-globe text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold">Private internet backbone</h3>
-                <p class="mt-2 text-gray-400">Avoid network congestion on the public internet for your users around the world.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">Private Internet Backbone</h3>
+                <p class="text-gray-400">Bypass public internet congestion and ensure smooth global user experiences.</p>
             </div>
         </div>
     </div>
