@@ -83,7 +83,7 @@ body {
         }
     }
 
-    .animate-fade-in-down {
+    /* .animate-fade-in-down {
        animation: fadeInDown 1s ease-out;
     }
 
@@ -93,4 +93,4 @@ body {
 
     .animate-slide-in-right {
       animation: slideInRight 1s ease-out;
-    }
+    } */

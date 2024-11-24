@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HykI AI: Next Gen Conversational AI</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                   colors: {
+                        primary: {
+                            DEFAULT: '#10B981', // Emerald green
+                            50: '#ECFDF5',
+                            100: '#D1FAE5',
+                            900: '#064E3B'
+                        },
+                        secondary: {
+                            DEFAULT: '#111827', // Dark blue-gray
+                            900: '#020617'
+                        },
+                        black: {
+                            DEFAULT: '#000000' // Black
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+
+                     // ... your existing config
+                    transitionProperty: {
+                       'height': 'height',
+                        'spacing': 'margin, padding',
+                    }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body class="bg-black text-white font-sans">
+     <div class="relative">
+        <div class="absolute top-0 left-0 w-full bg-gradient-to-r from-black to-green-900 h-12 flex items-center px-4">
+            <img src="./assets/images/HYKL-LOGO.jpg logo" alt="HYKL LOGO">
+            <span class="text-sm">Recognised as a next tech</span>
+        </div>
+        <div class="absolute top-0 right-0 w-full h-12 flex items-center justify-end px-4 space-x-4">
+            <span class="text-sm">+966 55 353 8058</span>
+            <button class="bg-white text-black px-4 py-2 rounded glow-on-hover">
+                CONTACT US
+            </button>
+        </div>
+    </div>
+
+    <div class="container mx-auto pt-20 px-4">
+    <div class="flex flex-col md:flex-row items-center animate-fade-in">
+        <!-- Left column -->
+        <div class="md:w-1/2 animate-slide-right delay-200">
+            <!-- Content -->
+             <div class="md:w-1/2">
+                <div class="flex items-center space-x-2 mb-4">
+                    <img src="./assets/images/HYKL-LOGO.jpg logo" alt="">
+                    <h1 class="text-green-500 text-xl">
+                        HykI AI: NEXT GEN CONVERSATIONAL AI
+                    </h1>
+                </div>
+                <h2 class="text-4xl font-bold mb-4">
+                    Experience the power of Contact Centre AI
+                </h2>
+                <p class="mb-4">
+                    Redefine your customer communication: Automate omnichannel workflows
+                    at scale which never stop learning & optimising your performance
+                </p>
+                <div class="flex items-center space-x-2 mb-4">
+                    <!-- <i class="fas fa-check-circle text-green-500"></i>
+                    <span>AI & Automation</span> -->
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span>AI Voice Agents</span>
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span>AI Chatbots</span>
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span>Custom Automation</span>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">1. How can we help ?*</h3>
+                    <div class="space-y-2">
+                        <button class="bg-gray-700 text-white px-4 py-2 rounded w-full text-left glow-on-hover" onclick="toggleForm('callMeForm')">
+                            A. Call me
+                        </button>
+                        <div class="hidden" id="callMeForm">
+                            <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Your Phone Number" type="text" />
+                            <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Your Email" type="email" />
+                            <button class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2 glow-on-hover">
+                                Submit
+                            </button>
+                        </div>
+                        <button class="bg-gray-700 text-white px-4 py-2 rounded w-full text-left glow-on-hover" onclick="toggleForm('bookDemoForm')">
+                            C. book a demo
+                        </button>
+                        <div class="hidden" id="bookDemoForm">
+                            <div class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2">
+                                <h4 class="text-lg font-bold mb-2">Book a Meeting</h4>
+                                <p class="mb-2">
+                                    Please select a date and time for your demo.
+                                </p>
+                                <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Select Date" type="date" />
+                                <input class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2" placeholder="Select Time" type="time" />
+                                <button class="bg-gray-700 text-white px-4 py-2 rounded w-full mt-2 glow-on-hover">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- Right column -->
+        <div class="md:w-1/2 flex justify-center animate-slide-left delay-400">
+            <!-- Image -->
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
